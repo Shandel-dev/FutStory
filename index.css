@@ -28,12 +28,17 @@ nav{
     display: flex;
     justify-content: space-between;
     background-color: var(--cor-secundaria);
-    padding: 0.5em;
+    padding: 0.5em 2em;
 }
 
 .nav_container{
     display: flex;
     align-items: center;
+    gap: 1em;
+}
+
+.nav_logo{
+    display: flex;
 }
 
 .nav_container ul{
@@ -44,5 +49,10 @@ nav{
 
 .nav_container a{
     color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.txt_pesquisa{
+
 }
 
