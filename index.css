@@ -17,8 +17,20 @@ body{
     background-color: var(--cor-primaria);
 }
 
+.container{
+    display: grid;
+    grid-template-areas: 
+        "header  header header header header"
+        "nav nav nav nav nav"
+        "aside main main main main";
+        grid-template-rows: auto 50px 1fr;
+        grid-template-columns: 200px 1fr;
+        height: 100vh;
+}
+
 header{
     display: flex;
+    grid-area: header;
     background-color: black;
     justify-content: center;
     color: var(--cor-primaria);
@@ -26,6 +38,7 @@ header{
 }
 nav{
     display: flex;
+    grid-area: nav;
     justify-content: space-between;
     background-color: var(--cor-secundaria);
     padding: 0.5em 2em;
@@ -52,7 +65,15 @@ nav{
     text-decoration: none;
 }
 
-.txt_pesquisa{
+aside{
+    display: flex;
+    grid-area: aside;
+    border: 2px solid red;
+}
 
+main{
+    display: flex;
+    grid-area: main;
+    border: 2px solid blue;
 }
 
