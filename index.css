@@ -75,11 +75,11 @@ nav a{
     background-color: var(--cor-terciaria);
 }
 
-.nav_container i{
-    background-color: var(--cor-primaria);
+.nav_container .label_theme{
     border-radius: 50%;
     padding: 0.3em;
     font-size: 1.3em;
+    background-color: var(--cor-primaria);
 }
 
 .nav_container input{
@@ -126,6 +126,7 @@ main{
     display: flex;
     grid-area: main;
     overflow-y: scroll;
+    flex-direction: column;
     padding: 2em;
 }
 
