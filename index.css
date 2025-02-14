@@ -65,6 +65,15 @@ nav a{
     list-style: none;
     gap: 1em;
 }
+.nav_container ul li a{
+    padding: 0.3em;
+    border-radius: 0.3em;
+    transition: 0.3s;
+}
+.nav_container ul li a:hover{
+    transition: 0.3s;
+    background-color: var(--cor-terciaria);
+}
 
 .nav_container i{
     background-color: var(--cor-primaria);
