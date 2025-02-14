@@ -101,6 +101,25 @@ aside{
     display: flex;
     grid-area: aside;
     background-color: var(--cor-terciaria);
+    flex-direction: column;
+    color: var(--cor-primaria);
+    padding: 0.5em;
+    text-align: center;
+}
+
+.aside_links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.aside_links a{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+.aside_links a:hover{
+    background-color: var(--cor-secundaria);
 }
 
 main{
