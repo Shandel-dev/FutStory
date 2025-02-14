@@ -14,3 +14,5 @@ const swiperBanner = new Swiper('.swiper-banner', {
         delay: 10000,
     }
 })
+
+const btn_theme = document.getElementById("")
