@@ -40,8 +40,14 @@ nav{
     display: flex;
     grid-area: nav;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--cor-secundaria);
+    border-bottom: 3px solid var(--cor-quartenaria);
     padding: 0.5em 2em;
+}
+nav a{
+    color: var(--cor-primaria);
+    text-decoration: none;
 }
 
 .nav_container{
@@ -60,20 +66,37 @@ nav{
     gap: 1em;
 }
 
-.nav_container a{
-    color: var(--cor-primaria);
-    text-decoration: none;
+.nav_container i{
+    background-color: var(--cor-primaria);
+    border-radius: 50%;
+    padding: 0.3em;
+    font-size: 1.3em;
 }
+
+.nav_container input{
+    padding: 0.2em 0em 0.2em 2em;
+    background-color: transparent;
+    border-radius: 0.5em;
+    color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);
+    font-size: 1em;
+}
+.nav_container input::placeholder{
+    color: var(--cor-primaria);
+    opacity: 0.6;
+
+}
+
 
 aside{
     display: flex;
     grid-area: aside;
-    border: 2px solid red;
+    background-color: var(--cor-terciaria);
 }
 
 main{
     display: flex;
     grid-area: main;
-    border: 2px solid blue;
+    overflow-y: scroll;
 }
 
