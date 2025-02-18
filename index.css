@@ -17,6 +17,7 @@
 body{
     font-family: var(--fonte-texto);
     background-color: var(--cor-primaria);
+    overflow: hidden;
 }
 
 .container{
@@ -133,6 +134,8 @@ aside{
     background-color: var(--cor-secundaria);
 }
 
+
+
 main{
     display: flex;
     grid-area: main;
@@ -150,7 +153,7 @@ main{
 .swiper-banner{
     display: flex;
     width: 100%;
-    min-height: 50vh;
+    min-height: 55vh;
     background-color: var(--cor-terciaria);
     border-radius: 1.5em;
 }
@@ -183,18 +186,51 @@ main section article{
     flex-direction: column;
     flex: 1 1 0;
 }
+main hr{
+    margin: 2em 0;
+}
 
 /* Estilos para dispositivos com largura máxima de 600px */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     html{
         font-size: 16px;
     }
-  }
-  
-  /* Estilos para dispositivos com largura entre 601px e 1200px */
-  @media (min-width: 601px) and (max-width: 1200px) {
+    nav{
+        justify-content: center;
+    }
+
+    .nav_container{
+        display: none;
+    }
+
+    .container{
+        grid-template-areas: 
+            "header  header header header header"
+            "nav nav nav nav nav"
+            "main main main main main";
+    }
+    aside{
+        position: absolute;
+        height: 100%;
+        width: 60vw;
+        z-index: 5;
+        transform: translateX(100%);
+    }
+    .swiper-banner{
+        min-height: 35vh;
+    }
+    main section{
+        flex-direction: column;
+    }
+}
+
+/* Estilos para dispositivos com largura entre 601px e 1200px */
+@media (min-width: 768px) and (max-width: 1200px){
     html{
         font-size: 18px;
+    }
+    main section{
+        flex-direction: column;
     }
 }
 

@@ -11,7 +11,7 @@ const swiperBanner = new Swiper('.swiper-banner', {
         prevEl: '.swiper-button-prev',
     },
     autoplay: {
-        delay: 10000,
+        delay: 100000,
     },
     loop: true,
 })
