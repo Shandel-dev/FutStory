@@ -1,6 +1,6 @@
-# ⚽ Futebol Project
+# ⚽ FutStory
 
-Bem-vindo ao repositório do projeto de Futebol! Este é um projeto pequeno desenvolvido com HTML, CSS e JavaScript. 🎉
+Bem-vindo ao repositório do projeto FutStory! Este é um projeto pequeno desenvolvido com HTML, CSS e JavaScript. 🎉
 
 ## 👫 Participantes
 
@@ -9,7 +9,7 @@ Bem-vindo ao repositório do projeto de Futebol! Este é um projeto pequeno dese
 
 ## 📋 Descrição
 
-Este projeto tem como objetivo criar um site sobre futebol. O site inclui informações sobre times, jogadores e campeonatos. 
+Este projeto tem como objetivo criar um site sobre futebol e sua origem. O site inclui informações sobre história, regulamento e jogadores. 
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -51,14 +51,14 @@ $ cd futebol-project
 
 ## 🔧 Como Usar
 
-1. Abra o arquivo `index.html` no seu navegador preferido.
+1. Abra o arquivo `index.html` no seu navegador de preferência.
 2. Navegue pelas seções disponíveis no site para explorar as informações sobre futebol.
 
 ## 📞 Contato
 
 Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato:
 
-- Shandel-dev: [seu-email@example.com]
+- Shandel-dev: []
 - Outro Participante: [email@example.com]
 
 ## 📜 Licença
