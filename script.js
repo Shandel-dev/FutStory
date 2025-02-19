@@ -40,3 +40,41 @@ theme.addEventListener("click", (e) =>{
         check_theme.checked = theme_status
     }
 })
+
+function verificarTamanhoTela(){        //script para a versão mobile
+    if(window.innerWidth < 768){
+        const btn_sidebar = document.querySelector(".nav_burguer")
+        
+        btn_sidebar.addEventListener("click", (e)=>{
+            const sidebar = document.querySelector("aside")
+        
+            const linha1 = document.querySelector(".nav_burguer div:nth-child(1)")
+            const linha2 = document.querySelector(".nav_burguer div:nth-child(2)")
+            const linha3 = document.querySelector(".nav_burguer div:nth-child(3)")
+        
+            linha_burguer()
+            
+            sidebar.classList.toggle("exibir-aside")
+            
+            if(sidebar.classList.contains("exibir-aside")){
+                const links_aside = document.querySelectorAll("aside a")
+                links_aside.forEach(links =>{
+                    links.addEventListener("click", (e) =>{
+                        sidebar.classList.remove("exibir-aside")
+                        linha1.classList.remove("linha1")
+                        linha2.classList.remove("linha2")
+                        linha3.classList.remove("linha3")
+                    })
+                })
+            }
+
+            function linha_burguer(){
+                linha1.classList.toggle("linha1")
+                linha2.classList.toggle("linha2")
+                linha3.classList.toggle("linha3")
+            }
+        })
+
+    }
+}
+verificarTamanhoTela()
