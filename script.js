@@ -18,7 +18,7 @@ const swiperBanner = new Swiper('.swiper-banner', {
 
 const theme = document.getElementById("lbl_theme")
 
-theme.addEventListener("click", (e) =>{
+theme.addEventListener("click", (e) => {
     const check_theme = document.getElementById("input_tema")
     const main = document.querySelector("main")
     const aside = document.querySelector("aside")
@@ -27,54 +27,49 @@ theme.addEventListener("click", (e) =>{
     main.classList.toggle("main-dark")
     aside.classList.toggle("aside-dark")
 
-    
 
-    if(check_theme.checked){    //mudar para tema claro
+
+    if (check_theme.checked) {    //mudar para tema claro
         mudarTema("<i class='fa-solid fa-futbol'></i>", false)
-    } else{     //mudar para tema escuro
+    } else {     //mudar para tema escuro
         mudarTema("<i class='fa-solid fa-moon'></i>", true)
     }
 
-    function mudarTema(icon, theme_status){
+    function mudarTema(icon, theme_status) {
         theme.innerHTML = icon
         check_theme.checked = theme_status
     }
 })
 
-function verificarTamanhoTela(){        //script para a versão mobile
-    if(window.innerWidth < 768){
-        const btn_sidebar = document.querySelector(".nav_burguer")
-        
-        btn_sidebar.addEventListener("click", (e)=>{
-            const sidebar = document.querySelector("aside")
-        
-            const linha1 = document.querySelector(".nav_burguer div:nth-child(1)")
-            const linha2 = document.querySelector(".nav_burguer div:nth-child(2)")
-            const linha3 = document.querySelector(".nav_burguer div:nth-child(3)")
-        
-            linha_burguer()
-            
-            sidebar.classList.toggle("exibir-aside")
-            
-            if(sidebar.classList.contains("exibir-aside")){
-                const links_aside = document.querySelectorAll("aside a")
-                links_aside.forEach(links =>{
-                    links.addEventListener("click", (e) =>{
-                        sidebar.classList.remove("exibir-aside")
-                        linha1.classList.remove("linha1")
-                        linha2.classList.remove("linha2")
-                        linha3.classList.remove("linha3")
-                    })
-                })
-            }
+function verificarTamanhoTela() {        //script para a versão mobile
+    const btn_sidebar = document.querySelector(".nav_burguer")
+    const sidebar = document.querySelector("aside")
+    const linhas_burguer = document.querySelectorAll(".nav_burguer div")
+    const link_aside = document.querySelectorAll("aside a")
 
-            function linha_burguer(){
-                linha1.classList.toggle("linha1")
-                linha2.classList.toggle("linha2")
-                linha3.classList.toggle("linha3")
-            }
+    btn_sidebar.addEventListener("click", (e) => {
+        sidebar.classList.toggle("exibir-aside")
+
+        linhas_burguer.forEach((linha, index) => {   //para cada linha, é executado um classlist toggle
+            linha.classList.toggle(`linha${index + 1}`)
         })
 
-    }
+    })
+    link_aside.forEach(link => {
+        link.addEventListener("click", (e) => {
+            sidebar.classList.remove("exibir-aside")
+            linhas_burguer.forEach((linha, index) => {
+                linha.classList.remove(`linha${index + 1}`)
+            })
+        })
+    })
 }
-verificarTamanhoTela()
+window.addEventListener("resize", () => {
+    if (window.innerWidth < 768) {
+        verificarTamanhoTela();
+    }
+});
+
+if (window.innerWidth < 768) {
+    verificarTamanhoTela();
+}
