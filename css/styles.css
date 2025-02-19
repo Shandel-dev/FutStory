@@ -1,0 +1,56 @@
+@import url(navbar.css);
+@import url(main.css);
+@import url(aside.css);
+
+:root{
+    --cor-primaria: #e4ffe3;
+    --cor-secundaria: #00743c;
+    --cor-terciaria: #00a153;
+    --cor-quartenaria: #FFCB00;
+    --fonte-texto: "Roboto", sans-serif;
+    --cor-dark-primaria: #0d1216;
+    --cor-dark-secundaria: #262626;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--fonte-texto);
+    background-color: var(--cor-primaria);
+    overflow: hidden;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+        "header  header header header header"
+        "nav nav nav nav nav"
+        "aside main main main main";
+        grid-template-rows: auto auto 1fr;  /*Altura automatica para a primeira e segunda linha, o restante do espaço é ocupado pela terceira linha*/
+        grid-template-columns: 1fr 4fr;   
+        height: 100vh;
+}
+
+/* RESPONSIVIDADE GERAL */
+
+/* Estilos para dispositivos com largura de 768px */
+@media (max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Estilos para dispositivos com largura entre 601px e 1200px */
+@media (min-width: 768px) and (max-width: 1200px){
+    
+}
+
+/* Estilos para dispositivos com largura mínima de 1201px */
+@media (min-width: 1201px) {
+    
+}
