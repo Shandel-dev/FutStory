@@ -4,7 +4,7 @@ Bem-vindo ao repositório do projeto FutStory! Este é um projeto pequeno desenv
 
 ## 👫 Participantes
 
-1. Shandel Villasante Merlo
+1.  (Shandel Villasante Merlo)[https://github.com/Shandel-dev]
 2. Pedro Henrique Medeiros
 
 ## 📋 Descrição
