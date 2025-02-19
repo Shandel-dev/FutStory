@@ -62,6 +62,9 @@ nav a{
 .nav_logo{
     display: flex;
 }
+.nav_logo img{
+    height: 3em;
+}
 
 .nav_container ul{
     display: flex;
