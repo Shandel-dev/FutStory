@@ -22,6 +22,7 @@ body{
     font-family: var(--fonte-texto);
     background-color: var(--cor-primaria);
     overflow: hidden;
+    font-size: 17px;
 }
 
 .container{
@@ -39,6 +40,9 @@ body{
 
 /* Estilos para dispositivos com largura de 768px */
 @media (max-width: 768px){
+    body{
+        font-size: 16px;
+    }
     .container{
         display: flex;
         flex-direction: column;
@@ -52,5 +56,7 @@ body{
 
 /* Estilos para dispositivos com largura mínima de 1201px */
 @media (min-width: 1201px) {
-    
+    body{
+        font-size: 18px;
+    }
 }
