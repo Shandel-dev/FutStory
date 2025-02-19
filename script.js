@@ -41,35 +41,43 @@ theme.addEventListener("click", (e) => {
     }
 })
 
-function verificarTamanhoTela() {        //script para a versão mobile
+function sidebarSettings() {        //script para a versão mobile
     const btn_sidebar = document.querySelector(".nav_burguer")
     const sidebar = document.querySelector("aside")
     const linhas_burguer = document.querySelectorAll(".nav_burguer div")
     const link_aside = document.querySelectorAll("aside a")
 
-    btn_sidebar.addEventListener("click", (e) => {
-        sidebar.classList.toggle("exibir-aside")
+    toggleSidebar()
+    removeClass()
 
-        linhas_burguer.forEach((linha, index) => {   //para cada linha, é executado um classlist toggle
-            linha.classList.toggle(`linha${index + 1}`)
-        })
-
-    })
-    link_aside.forEach(link => {
-        link.addEventListener("click", (e) => {
-            sidebar.classList.remove("exibir-aside")
-            linhas_burguer.forEach((linha, index) => {
-                linha.classList.remove(`linha${index + 1}`)
+    function toggleSidebar(){
+        btn_sidebar.addEventListener("click", (e) => {
+            sidebar.classList.toggle("exibir-aside")
+    
+            linhas_burguer.forEach((linha, index) => {   //para cada linha, é executado um classlist toggle
+                linha.classList.toggle(`linha${index + 1}`)
             })
         })
-    })
+    }
+
+    function removeClass(){
+        link_aside.forEach(link => {
+            link.addEventListener("click", (e) => {
+                sidebar.classList.remove("exibir-aside")
+                linhas_burguer.forEach((linha, index) => {
+                    linha.classList.remove(`linha${index + 1}`)
+                })
+            })
+        })
+    }
+
 }
 window.addEventListener("resize", () => {
     if (window.innerWidth < 768) {
-        verificarTamanhoTela();
+        sidebarSettings();
     }
 });
 
 if (window.innerWidth < 768) {
-    verificarTamanhoTela();
+    sidebarSettings();
 }
