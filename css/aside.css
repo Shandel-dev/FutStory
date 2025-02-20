@@ -1,0 +1,58 @@
+aside{
+    display: flex;
+    grid-area: aside;
+    background-color: var(--cor-terciaria);
+    flex-direction: column;
+    color: var(--cor-primaria);
+    padding: 0.5em;
+    text-align: center;
+    gap: 1em;
+    transition: 0.3s;
+}
+
+.aside-dark{
+    background-color: var(--cor-dark-secundaria);
+    color: var(--cor-primaria);
+    transition: 0.3s;
+}
+
+.aside_links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.aside_links a{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+.aside_links a:hover{
+    background-color: var(--cor-secundaria);
+}
+
+/* RESPONSIVIDADE DA BARRA LATERAL */
+
+/* Estilos para dispositivos com largura de 768px */
+@media (max-width: 768px) {
+    aside{
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        transform: translateX(-100%);
+        width: 60vw;
+        height: 100dvh;
+        padding-top: 6em;
+    }
+}
+
+/* Estilos para dispositivos com largura entre 601px e 1200px */
+@media (min-width: 768px) and (max-width: 1200px){
+    
+}
+
+/* Estilos para dispositivos com largura mínima de 1201px */
+@media (min-width: 1201px) {
+    
+}
