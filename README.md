@@ -1,6 +1,6 @@
 # ⚽ FutStory
 
-Bem-vindo ao repositório do projeto FutStory! Este é um projeto pequeno desenvolvido com HTML, CSS e JavaScript. 🎉
+(texto ainda em digitação)
 
 ## 👫 Participantes
 
@@ -9,7 +9,8 @@ Bem-vindo ao repositório do projeto FutStory! Este é um projeto pequeno desenv
 
 ## 📋 Descrição
 
-Este projeto tem como objetivo criar um site sobre futebol e sua origem. O site inclui informações sobre história, regulamento e jogadores. 
+Bem-vindo ao repositório do projeto FutStory! Este projeto tem como objetivo criar um site sobre futebol e sua origem. O site inclui informações sobre história, regulamento e jogadores.  🎉
+
 
 ## 🚀 Tecnologias Utilizadas
 
