@@ -28,14 +28,18 @@ Link para o projeto no Canva -> [FutStory](https://www.canva.com/design/DAGe6aKS
 ## 📂 Estrutura do Projeto(ainda em digitação)
 
 ```plaintext
-futebol-project/
+futStory/
 ├── index.html
+├──script.js
 ├── css/
-│   └── styles.css
-├── js/
-│   └── scripts.js
-└── assets/
-    └── images/
+│   ├── styles.css
+|   ├── navbar.css
+|   ├── main.css
+|   └── aside.css
+└── imagens/
+    ├── img.png
+    ├── img2.png
+    └── img3.jpg
 ```
 
 ## 🌟 Funcionalidades
