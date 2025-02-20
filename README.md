@@ -11,6 +11,9 @@
 
 Bem-vindo ao repositório do projeto FutStory! Este projeto tem como objetivo criar um site sobre futebol e sua origem. O site inclui informações sobre história, regulamento e jogadores.  🎉
 
+## Link do site
+
+acesse o link do projeto na web: [FutStory](https://shandel-dev.github.io/FutStory/)
 
 ## 🚀 Tecnologias Utilizadas
 
