@@ -34,7 +34,7 @@ const swiperIdolos = new Swiper('.swiper-idolos', {
     breakpoints: {
         //quando a janela é >= a 768px 
         768: {
-            slidesPerView: 2.5,
+            slidesPerView: 3,
         }
     }
 })
