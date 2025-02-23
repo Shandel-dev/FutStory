@@ -36,6 +36,19 @@ main{
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.80) 35%, rgba(0,212,255,0) 100%);
 }
 
+.swiper-idolos{
+    display: flex;
+    width: 100%;
+    min-height: 45vh;
+    border: 2px solid green;
+    
+}
+.swiper-idolos .swiper-slide{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+}
+
 main section{
     display: flex;
     margin-top: 2em;

@@ -16,6 +16,29 @@ const swiperBanner = new Swiper('.swiper-banner', {
     loop: true,
 })
 
+//slider de jogadores
+const swiperIdolos = new Swiper('.swiper-idolos', {
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 1.5,
+    centeredSlides: true,
+    spaceBetween: 15,
+    breakpoints: {
+        //quando a janela é >= a 768px 
+        768: {
+            slidesPerView: 2.5,
+        }
+    }
+})
+
 const theme = document.getElementById("lbl_theme")
 
 theme.addEventListener("click", (e) => {
