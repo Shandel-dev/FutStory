@@ -42,15 +42,44 @@ main {
 .swiper-idolos {
     display: flex;
     width: 100%;
-    height: 40vh;
-    border: 2px solid green;
+    height: 45vh;
 
 }
 
 .swiper-idolos .swiper-slide {
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
+    justify-content: end;
+    border-radius: 1em 1em 0 0 ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+    cursor: pointer;
+    padding: 1em;
+    transition: 0.5s;
+}
+
+.swiper-idolos .swiper-slide:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.swiper-idolos .swiper-slide::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: transparent;
+    transition: 0.5s;
+}
+.swiper-idolos .swiper-slide:hover::after{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.80) 35%, rgba(0, 212, 255, 0) 100%);
+    transition: 1s;
+
 }
 
 main section {
@@ -65,6 +94,10 @@ main section article {
     justify-content: center;
     flex-direction: column;
     flex: 1 1 0;
+    text-align: justify;
+}
+main section article > figure img, img{
+    width: 100%;
 }
 
 main hr {
