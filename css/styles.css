@@ -27,12 +27,12 @@ body{
 
 .container{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "header  header header header header"
         "nav nav nav nav nav"
         "aside main main main main";
         grid-template-rows: auto auto 1fr;  /*Altura automatica para a primeira e segunda linha, o restante do espaço é ocupado pela terceira linha*/
-        grid-template-columns: 1fr 4fr;   
+        grid-template-columns: 1fr 4fr; 
         height: 100dvh;
 }
 
