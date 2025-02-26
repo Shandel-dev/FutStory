@@ -20,6 +20,10 @@ nav a{
     text-decoration: none;
 }
 
+.nav_burguer{
+    display: none;
+}
+
 .nav_container{
     display: flex;
     align-items: center;

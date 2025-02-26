@@ -11,9 +11,10 @@ const swiperBanner = new Swiper('.swiper-banner', {
         prevEl: '.swiper-button-prev',
     },
     autoplay: {
-        delay: 100000,
+        delay: 10000,
     },
     loop: true,
+    effect: "fade",
 })
 
 //slider de jogadores
@@ -92,12 +93,5 @@ function sidebarSettings() {        //script para a versão mobile
     }
 
 }
-window.addEventListener("resize", () => {
-    if (window.innerWidth < 768) {
-        sidebarSettings();
-    }
-});
 
-if (window.innerWidth < 768) {
-    sidebarSettings();
-}
+sidebarSettings();
